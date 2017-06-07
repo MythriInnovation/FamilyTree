@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FamilyTree</title>
+  <base href="https://hirankumar.github.io/FamilyTree/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="icon" type="image/x-icon" href="favicon.ico">-->
+      <link rel="stylesheet" href="styles.css">
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('main.js').catch(function(err){ console.error(err); });
+    </script>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
+<body>
+  <app-root>Loading...</app-root>
+
+   <script type="text/javascript">
+        // google.load("visualization", "1", { packages: ["orgchart"] });
+        // google.setOnLoadCallback(drawChartMember);
+   
+    </script>
+    <style>
+        table{
+            border-collapse: separate !important;
+        }
+</style>
+    <style>
+
+    ul {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+        ul li {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+            ul li img {
+                cursor: pointer;
+            }
+
+    .modal-body {
+        padding: 5px !important;
+    }
+
+    .modal-content {
+        border-radius: 0;
+    }
+
+    .modal-dialog img {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .controls {
+        width: 50px;
+        display: block;
+        font-size: 11px;
+        padding-top: 8px;
+        font-weight: bold;
+    }
+
+    .next {
+        float: right;
+        text-align: right;
+    }
+    /*override modal for demo only*/
+    .modal-dialog {
+        max-width: 500px;
+        padding-top: 90px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .modal-dialog {
+            width: 500px;
+            padding-top: 90px;
+        }
+    }
+
+    @media screen and (max-width:1500px) {
+        #ads {
+            display: none;
+        }
+    }
+</style>
+ <!--<script language="javascript">
+        $('#header').innerHeight=500;
+    </script>-->
+
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/prettyPhoto.css" rel="stylesheet">
+    <link href="/assets/css/animate.min.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/responsive.css" rel="stylesheet">
+    <link href="/assets/css/tree.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    
+    <!--<link rel="shortcut icon" href="./app/images/ico/favicon1.ico">-->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/ico/apple-touch-icon-57-precomposed.png">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="/assets/js/photo-gallery.js"></script>
+    <script src="/assets/Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+     <script language="Javascript">
+        $(function ()
+        {
+            var monthNames = ["Jan", "Feb", "March", "April", "May", "June",
+                             "July", "Aug", "Sept", "Oct", "Nov", "Dec"
+            ];
+
+            $("span").each(function (index) {
+                if (this.id == "publish_date")
+                {
+                    $(this).text(new Date().getUTCDate() + " " + monthNames[new Date().getUTCMonth()]);
+                }
+            });
+        });
+        
+    </script>
+<script type="text/javascript" src="inline.b9cf51573cffc5e40c5f.bundle.js"></script><script type="text/javascript" src="polyfills.09e8a2e925a0e8826708.bundle.js"></script><script type="text/javascript" src="vendor.63c996645815dbd05703.bundle.js"></script><script type="text/javascript" src="main.791ad451bf5f5075f146.bundle.js"></script></body>
+</html>
