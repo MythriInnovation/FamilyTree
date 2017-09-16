@@ -1,3 +1,100 @@
-<h1>
-  {{title}}
-</h1>
+  <header id="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        <div class="top-number"><p><i class="fa fa-phone-square"></i>  +0123 456 70 90</p></div>
+                    </div>
+                    <div class="col-sm-6 col-xs-6">
+                        <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                            <div class="search">
+                                <form role="form">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                            </div>
+                          
+          <button  data-toggle="modal" data-target="#myModal">
+              <span class="glyphicon glyphicon-user"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/.top-bar-->
+ <nav class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                  <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/Home">Home</a></li>
+                        <!--<li><a  (click)="onClickMe('AboutUs')" href="#">About Us</a></li>-->
+                        <li><a href="#/AboutUs">About Us</a></li>
+                        <li><a href="#/Gallery">Gallery</a></li>
+                        <li><a href="#/Tree">Family Tree</a></li>
+                        <li><a href="#/Blog">Blog</a></li>
+                        <li><a href="#/ContactUs">Contact</a></li>
+                    </ul>
+                </div>
+            </div><!--/.container-->
+</nav><!--/nav-->
+
+<router-outlet></router-outlet>
+ <!--<div *ngIf="activeChildRoute">
+    <h3>Child template</h3>
+    <router-outlet></router-outlet>
+  </div>-->
+
+   <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <!--<div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>-->
+        <div class="modal-body">
+             <div class="wrapper">
+                <form class="form-signin">       
+                <h2 class="form-signin-heading">Please login</h2>
+                <input type="text" class="form-control" name="username" [(ngModel)]="usermodel.username" placeholder="Email Address" required="" autofocus="" />
+                <input type="password" class="form-control" name="password" [(ngModel)]="usermodel.password" placeholder="Password" required=""/>      
+                <label class="checkbox">
+                    <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+                </label>
+                <button class="btn btn-lg btn-primary btn-block" (click)="Close($event)">Login</button>   
+                </form>
+            </div>
+  
+        </div>
+        <!--<div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>-->
+      </div>
+    </div>
+  </div>
+
+<footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2017 <a target="_blank" href="http://mythriinnovations.com/">mythriinnovations.com</a>. All Rights Reserved.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Faq</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</footer>
